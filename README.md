@@ -1,4 +1,4 @@
-# db-sales
+# Supermarket Sales Database
 
 Relational database system for a supermarket sales operation — designed, implemented, and deployed on a Linux VM as part of an academic project.
 
@@ -26,7 +26,7 @@ The database was deployed on the **MariaDB instance running on `vm2web`**, part 
 | `tbl_vendas` | Sales transactions linked to customer and employee |
 | `tbl_itens_venda` | Line items per sale — resolves the N:M relationship between sales and products |
 
-### Conceptual Diagram
+### Logical Diagram
 
 ![Database diagram](diagrams/db_sales(1).png)
 
@@ -118,9 +118,15 @@ Foreign key constraints enforced with InnoDB. Attempting to insert a sale refere
 | File | Description |
 |---|---|
 | `sql/db_sales.sql` | Full database dump — schema + data |
-| `diagrams/db_sales(1).png` | Conceptual/logical diagram |
+| `diagrams/db_sales(1).png` | Logical diagram |
 | `screenshots/` | Evidence of implementation and testing |
 | `README.md` | This file |
+
+---
+
+## Related Projects
+
+- [enterprise-linux-lab](https://github.com/reisops/enterprise-linux-lab) — multi-VM Linux infrastructure where this database was deployed. The MariaDB instance running on `vm2web` served as the backend for this project.
 
 ---
 
